@@ -23,18 +23,33 @@
     <![endif]-->
     <script type="text/javascript">
     window.setTimeout("waktu()",1000);    
-    function waktu() {     
-    var tanggal = new Date();    
-    setTimeout("waktu()",1000);    
-    document.getElementById("output").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+" WIB";  
-    }
+    window.onload = function() { jam(); }
+       
+       function jam() {
+           var e = document.getElementById('output'),
+           d = new Date(), h, m, s;
+           h = d.getHours();
+           m = set(d.getMinutes());
+           s = set(d.getSeconds());
+      
+           e.innerHTML = h +':'+ m +':'+ s + " WIB";
+      
+           setTimeout('jam()', 1000);
+       }
+      
+       function set(e) {
+           e = e < 10 ? '0'+ e : e;
+           return e;
+       }
     window.setTimeout("waktu_m()",1000);    
     function waktu_m() {     
     var tanggal = new Date();    
     setTimeout("waktu_m()",1000);    
-    document.getElementById("output_m").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+" WIB";  
+    document.getElementById("output_m").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds() +" WIB";
+    
     }   
 </script>
+
   </head>
 
   <body>
