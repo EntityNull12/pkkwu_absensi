@@ -5,7 +5,7 @@ include '../lib/db/dbconfig.php';
 
 if (isset($_POST['login'])) {
 	$email = mysqli_real_escape_string($conn, $_POST['email']);
-	$pwd = sha1(mysqli_escape_string($conn, $_POST['pwd']));
+	$pwd = (mysqli_escape_string($conn, $_POST['pwd']));
 
 	$sql = "SELECT * FROM user WHERE email_user='$email' AND pwd_user='$pwd'";
 	$query = $conn->query($sql);
@@ -447,8 +447,8 @@ elseif (isset($_POST['add_siswa'])) {
 	$id = $ambil['id_user']+1;
 	$nis = mysqli_real_escape_string($conn, $_POST['nis']);
 	$email = mysqli_real_escape_string($conn, $_POST['email']);
-	$pwd = mysqli_real_escape_string($conn, sha1($_POST['pwd_cek']));
-	$pwd_cek = mysqli_real_escape_string($conn, sha1($_POST['pwd']));
+	$pwd = mysqli_real_escape_string($conn, ($_POST['pwd_cek']));
+	$pwd_cek = mysqli_real_escape_string($conn, ($_POST['pwd']));
 	
 	$nama = mysqli_real_escape_string($conn, $_POST['nama']);
 	$jk = mysqli_real_escape_string($conn, $_POST['jk']);
