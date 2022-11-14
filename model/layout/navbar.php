@@ -9,7 +9,6 @@
 <div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right visible-xs visible-sm">
 <li id="output_m"></li>
-37
 <?php
 	if (isset($_SESSION['pb'])) {
    			$link=array("","add_siswa","siswa","absen","absensi","req_catatan","catatan", "katasandi&id=$_SESSION[id]","keluar");

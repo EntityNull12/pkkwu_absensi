@@ -2,9 +2,15 @@
  * Base structure
  */
 
+@font-face {
+  font-family: Poppins;
+  src: url(./font/Poppins-Regular.ttf);
+}
+
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
+  font-family:'Poppins', sans-serif;
 }
 
 
@@ -105,14 +111,14 @@ body {
 }
 #output{
 font-size:165%;
-font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+font-family:'Poppins', sans-serif;
 text-align:center;
 #margin-top:13%;
 color:#222222;
 }
 #output_m{
 font-size:165%;
-font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+font-family:'Poppins', sans-serif;
 text-align:center;
 #margin-top:13%;
 color:#EEE;
