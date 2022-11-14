@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./font/Poppins-Regular.ttf);
+}
+
 body {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -30,11 +35,33 @@ body {
 }
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  /* border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; */
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0; */
+}
+
+.box1 .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: .3s;
+}
+.box1 .user-box input:focus~label,
+.box1 .user-box input:valid~label,
+.box1 .user-box input:focus~label[type="email"] {
+  top: -25px;
+  left: 0;
+  color: #3897e0;
+  font-size: 12px;
+}
+
+.box1 .user-box input, .box1 .user-box label{
+  padding: 7px 10px;
 }

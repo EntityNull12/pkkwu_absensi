@@ -31,10 +31,10 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body style="font-family: 'Poppins';">
 
     <div class="container">
-      <form class="form-signin" method="post" action="model/proses.php">
+      <form class="form-signin" method="post" action="model/proses.php" autocomplete="off">
         <h2 class="form-signin-heading">Please sign in</h2>
         <!-- <div class='alert alert-danger'><strong>Info : Telah dilakukan pembersihan User, untuk dapat masuk silahkan hubungi <a href="http://fb.me/rizal.ofdraw" title="Hubungi Admin">Admin</a>.<br />Mohon maaf atas ketidaknyamanan ini, Terimakasih.</strong></div>
         <div class='alert alert-success'>
@@ -50,12 +50,18 @@
                 }
             }
          ?>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="pwd" id="inputPassword" class="form-control" placeholder="Password" required="">
-    
+        <div class="box1" style="margin-top: 30px;">
+          <div class="user-box position-relative" style="margin-bottom: 20px;">
+            <input type="email" name="email" id="inputEmail" class="form-control border border-bottom"  required="" autofocus="">
+            <label for="inputEmail" class="sr-only form-label">Email address</label>
+          </div>
+          <div class="user-box position-relative">
+            <input type="password" name="pwd" id="inputPassword" class="form-control rounded" required="">
+            <label for="inputPassword" class="sr-only form-label">Password</label>
+          </div>
+        </div>
         <input class="btn btn-lg btn-primary btn-block" type="submit" name="login" value="Sign-in">
+        
       </form>
 
     </div> <!-- /container -->

@@ -67,7 +67,7 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top bg-dark">
     <div class="container-fluid">
       <?php
       include './model/layout/navbar.php';
