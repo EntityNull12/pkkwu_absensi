@@ -41,7 +41,7 @@
                   <td>$date</td>
                   <td>$note</td>
                   <td>
-                  <button type='button' class='btn btn-warning' onclick=\"window.location.href='./model/proses.php?acc_note=$id_note';\">Konfirmasi</button>&nbsp;
+                  <button type='button' class='btn btn-success' onclick=\"window.location.href='./model/proses.php?acc_note=$id_note';\">Konfirmasi</button>&nbsp;
                   <button type='button' class='btn btn-danger' onclick=\"window.location.href='./model/proses.php?dec_note=$id_note';\">Tolak</button>
                   </td>
                   </tr>";

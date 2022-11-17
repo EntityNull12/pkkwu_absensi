@@ -14,7 +14,7 @@ if (isset($_GET['st'])) {
         }
     }
  ?>
-    <div class='table-resfponsive'>
+    <div class='table-responsive'>
     <?php 
         if (isset($_GET['id_siswa'])) {
             if ($_GET['id_siswa']!=="") {
@@ -48,13 +48,13 @@ if ($cek_page->num_rows != 0) {
     if ($r = $conn->query($q)) {
    
     if ($r->num_rows!==0) {
-            echo "<table class='table table-striped' style='width:70%'>
+            echo "<table class='table table-striped' style='width:100%'>
                     <thead>
                         <tr>
-                            <th>No</th>
-                            <th>Nama Siswa</th>
-                            <th>Asal Sekolah</th>
-                            <th>Aksi</th>
+                            <th style='width:2%'>No</th>
+                            <th style='width:40%'>Nama Siswa</th>
+                            <th style='width:40%'>Asal Sekolah</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>";
@@ -69,7 +69,7 @@ if ($cek_page->num_rows != 0) {
                                 <td>$no</td>
                                 <td>$name</td>
                                 <td><strong>$school</strong></td>
-                                <td><a href='siswa&id_siswa=$id_siswa' title='Edit $name'>Edit info</a> &bullet; <a style='cursor:pointer' onclick='hapusSiswa($id_siswa)' >Hapus Siswa</a></td>
+                                <td><a class='btn btn-primary px-2 py-1' href='siswa&id_siswa=$id_siswa' title='Edit $name'>Edit info</a>  <a style='cursor:pointer' class='btn btn-danger ms-2 px-2' onclick='hapusSiswa($id_siswa)' >Hapus Siswa</a></td>
                             </tr>";
                     }
                    // $conn->close();

@@ -11,13 +11,13 @@
 		} else {
 			$sql = "SELECT*FROM detail_user ORDER BY sklh_user ASC";
 			if ($conn->query($sql)->num_rows!==0) {
-				echo "<table class='table table-striped' style='width:50%'>
+				echo "<table class='table table-striped' style='width:100%'>
 					<thead>
 						<tr>
-							<th>No</th>
-							<th>Nama Siswa</th>
-							<th>Asal Sekolah</th>
-							<th>Aksi</th>
+							<th style='width: 2%'>No</th>
+							<th style='width: 40%'>Nama Siswa</th>
+							<th style='width: 40%'>Asal Sekolah</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>";
@@ -32,7 +32,7 @@
 							<td>$no</td>
 							<td>$name</td>
 							<td>$school</td>
-							<td><a href='catatan&id_siswa=$id_siswa' title='Catatan $name'>Lihat Catatan</a></td>
+							<td><a class='btn btn-primary' href='catatan&id_siswa=$id_siswa' title='Catatan $name'>Lihat Catatan</a></td>
 						</tr>";
 				}
 				$conn->close();

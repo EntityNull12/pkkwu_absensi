@@ -1,5 +1,5 @@
 <h3 class='page-header'>Ganti katasandi</h3>
-<div class="col-md-6">
+<div class="col">
 <?php 
 if (isset($_GET['st'])) {
         if ($_GET['st']==1) {
