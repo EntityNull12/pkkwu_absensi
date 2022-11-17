@@ -1,6 +1,7 @@
 <ul class="nav nav-sidebar">
-<li class="nav-link" id="output"></li>
+<li class="nav-link w-100" id="output"></li>
    <?php
+   ob_start();
    		if (isset($_SESSION['pb'])) {
    			$link=array("","add_siswa","siswa","absen","absensi","req_catatan","catatan", "katasandi&id=$_SESSION[id]","keluar");
 			$name=array("","Tambah Siswa","Daftar Siswa","Absen","Lihat Absensi","Catatan","Lihat Catatan","Ubah Katasandi", "Keluar");
@@ -16,7 +17,7 @@
 				} else {
 					$warning = "";
 				} */
-				echo "<li $status><a class='nav-link' href='$link[$i]'>$name[$i]</a></li>";
+				echo "<li class ='w-100'><div $status><a class='nav-link' href='$link[$i]'>$name[$i]</a></div></li>";
 			}
    		} elseif (isset($_SESSION['sw'])) {
    			$this_day = date("d");
