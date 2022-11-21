@@ -52,8 +52,8 @@
          ?>
         <div class="box1" style="margin-top: 30px;">
           <div class="user-box position-relative" style="margin-bottom: 20px;">
-            <input type="email" name="email" id="inputEmail" class="form-control border border-bottom"  required=""  autofocus oninvalid="this.setCustomValidity('Ini wajib di isi! / isi format dengan benar!')" oninput="this.setCustomValidity('')">
-            <label for="inputEmail" class="sr-only form-label">Email address</label>
+            <input type="text" name="email" id="inputEmail" class="form-control border border-bottom"  required=""  autofocus oninvalid="this.setCustomValidity('Ini wajib di isi! / isi format dengan benar!')" oninput="this.setCustomValidity('')">
+            <label for="inputEmail" class="sr-only form-label">Username</label>
           </div>
           <div class="user-box position-relative">
             <input type="password" name="pwd" id="inputPassword" class="form-control rounded" required="" oninvalid="this.setCustomValidity('Ini wajib di isi!')" oninput="this.setCustomValidity('')">

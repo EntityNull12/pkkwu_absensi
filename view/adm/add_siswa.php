@@ -17,7 +17,7 @@
 	}
 
  ?>
-<form class="form-horizontal" role="form" style="width:80%" onSubmit="return validasi()" name="formulir" method="post" action="./model/proses.php">
+<form class="form-horizontal" role="form" style="width:80%" onSubmit="return validasi()" name="formulir" method="post" action="./model/proses.php" autocomplete="off">
   <div class="form-group my-2">
     <label class="control-label col-sm-2" for="name">NIS:</label>
     <div class="col-sm-10">
@@ -45,9 +45,9 @@
     </div>
   </div>
   <div class="form-group my-2">
-    <label class="control-label col-sm-2" for="email">Email:</label>
+    <label class="control-label col-sm-2" for="email">Username:</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="email" placeholder="Masukan email" required>
+      <input type="text" class="form-control" name="email" placeholder="Masukan username" required>
     </div>
   </div>
   <div class="form-group">
