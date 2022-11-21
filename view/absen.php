@@ -13,8 +13,8 @@ $query_tday = $conn->query($sql);
 			echo "<div class='alert alert-danger'><strong>Maaf, Absen Gagal. Silahkan Coba Kembali!</strong></div>";
 		}
 	}
-echo "<div class='table-responsive'>
-           <table class='table table-striped'>
+echo "<div class='table-responsive '>
+           <table class='table table-striped '>
             <thead>
                <tr>
                 <th>Status</th>
@@ -49,9 +49,9 @@ if ($query_tday->num_rows==0) {
 }
 echo 	"<tr>
         <td><img src='$status' width='30px'/></td>
-        <td><h5>$message</h5></td>
-        <td><button type='button' class='btn btn-warning' onclick=\"window.location.href='./model/proses.php?absen=1';\" $disable_in>Absen Masuk</button></td>
-        <td><button type='button' class='btn btn-danger' onclick=\"window.location.href='./model/proses.php?absen=2';\" $disable_out>Absen Pulang</button></td>
+        <td><p style-'font-size:1rem'>$message</p></td>
+        <td><button type='button' class='btn btn-primary' onclick=\"window.location.href='./model/proses.php?absen=1';\" $disable_in>Absen Masuk</button></td>
+        <td><button type='button' class='btn btn-warning text-white' onclick=\"window.location.href='./model/proses.php?absen=2';\" $disable_out>Absen Pulang</button></td>
         </tr>";
 echo "</table></div>";
 ?>

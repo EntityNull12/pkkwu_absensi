@@ -66,7 +66,7 @@
   </div>
   <div class="form-group my-3"> 
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-success" name="add_siswa">Simpan</button>
+      <button type="submit" class="btn btn-primary" name="add_siswa">Simpan</button>
       <button type="reset" class="btn btn-danger ms-2" name="add_siswa">Reset</button>
     </div>
   </div>

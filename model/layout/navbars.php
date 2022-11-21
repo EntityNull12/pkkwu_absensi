@@ -15,7 +15,7 @@
 			$name=array("","Tambah Siswa","Absen","Lihat Absensi","Catatan","Lihat Catatan","Keluar");
 
 			for ($i=1; $i <= count($link)-1 ; $i++) {
-				echo "<li><a href='$link[$i]'>$name[$i]</a></li>";
+				echo "<li><a class='nav-link' href='$link[$i]'>$name[$i]</a></li>";
 			}
    		} elseif (isset($_SESSION['sw'])) {
 			$link=array("","absen","absensi","tambah_catatan","catatan","keluar");
@@ -23,7 +23,7 @@
 			
 			for ($i=1; $i <= count($link)-1 ; $i++) {
 				
-				echo "<li><a href='$link[$i]'>$name[$i]</a></li>";
+				echo "<li><a class='nav-link' href='$link[$i]'>$name[$i]</a></li>";
 			}
    		}
  ?>

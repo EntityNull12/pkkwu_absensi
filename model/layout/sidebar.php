@@ -41,7 +41,7 @@
 				} else {
 					$warning = "";
 				}
-				echo "<li $status><a href='$link[$i]'>$name[$i] $warning</a></li>";
+				echo "<li $status><a class='nav-link' href='$link[$i]'>$name[$i] $warning</a></li>";
 			}
    		}
 	?>
