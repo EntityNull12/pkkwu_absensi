@@ -51,7 +51,7 @@ echo 	"<tr>
         <td><img src='$status' width='30px'/></td>
         <td><p style-'font-size:1rem'>$message</p></td>
         <td><button type='button' class='btn btn-primary' onclick=\"window.location.href='./model/proses.php?absen=1';\" $disable_in>Absen Masuk</button></td>
-        <td><button type='button' class='btn btn-warning text-white' onclick=\"window.location.href='./model/proses.php?absen=2';\" $disable_out>Absen Pulang</button></td>
+        <td><button type='button' class='btn btn-danger' onclick=\"window.location.href='./model/proses.php?absen=2';\" $disable_out>Absen Pulang</button></td>
         </tr>";
 echo "</table></div>";
 ?>

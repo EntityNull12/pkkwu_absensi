@@ -6,10 +6,13 @@
      *  fb.me/rizal.ofdraw
      *  
      */
+
+    // $dbuser = "root";
+    // $dbpwd = "";
     $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpwd = "";
-    $dbname = "pkkwu_absensi";
+    $dbuser = "rpls4335_admin_absensi";
+    $dbpwd = "admin_absensirpl";
+    $dbname = "rpls4335_pkkwu_absensi";
 
     $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
  ?>
