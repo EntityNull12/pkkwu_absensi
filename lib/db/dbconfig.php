@@ -10,8 +10,8 @@
     // $dbuser = "root";
     // $dbpwd = "";
     $dbhost = "localhost";
-    $dbuser = "rpls4335_admin_absensi";
-    $dbpwd = "admin_absensirpl";
+    $dbuser = "root";
+    $dbpwd = "";
     $dbname = "rpls4335_pkkwu_absensi";
 
     $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
