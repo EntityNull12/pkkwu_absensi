@@ -3,6 +3,11 @@
   src: url(./font/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: Poppins-semibold;
+  src: url(./font/Poppins-SemiBold.ttf);
+}
+
 body {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -56,9 +61,9 @@ body {
 .box1 .user-box input:focus~label,
 .box1 .user-box input:valid~label,
 .box1 .user-box input:focus~label[type="email"] {
-  top: -25px;
+  top: -30px;
   left: 0;
-  color: #3897e0;
+  color: #198754;
   font-size: 12px;
 }
 

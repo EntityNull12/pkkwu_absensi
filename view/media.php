@@ -9,7 +9,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+  <link rel="icon" href="../view/favicon.ico">
 
   <title>Absensi Prakerin</title>
 
@@ -67,7 +67,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-fixed-top bg-primary navbar-dark ">
+  <nav class="navbar navbar-expand-lg navbar-fixed-top bg-success navbar-dark ">
     <div class="container-fluid">
       <?php
       include './model/layout/navbar.php';

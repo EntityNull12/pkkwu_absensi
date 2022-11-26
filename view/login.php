@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <title>Login</title>
 
@@ -31,11 +31,14 @@
     <![endif]-->
   </head>
 
-  <body style="font-family: 'Poppins';">
+  <body style="font-family: 'Poppins';" class="bg-success">
+  <div class="container">
 
-    <div class="container">
-      <form class="form-signin" method="post" action="model/proses.php" autocomplete="off">
-        <h2 class="form-signin-heading">Please sign in</h2>
+  <h2 class="text-center text-white mb-4" style="font-family: Poppins-semibold;">Selamat Datang</h2>
+
+    
+      <form class="form-signin bg-white rounded-4" method="post" action="model/proses.php" autocomplete="off">
+        <!-- <h2 class="form-signin-heading">Selamat Datang</h2> -->
         <!-- <div class='alert alert-danger'><strong>Info : Telah dilakukan pembersihan User, untuk dapat masuk silahkan hubungi <a href="http://fb.me/rizal.ofdraw" title="Hubungi Admin">Admin</a>.<br />Mohon maaf atas ketidaknyamanan ini, Terimakasih.</strong></div>
         <div class='alert alert-success'>
         <strong>Untuk sekedar melihat-lihat Anda dapat menggunakan akun sementara :<br />
@@ -51,7 +54,7 @@
             }
          ?>
         <div class="box1" style="margin-top: 30px;">
-          <div class="user-box position-relative" style="margin-bottom: 20px;">
+          <div class="user-box position-relative" style="margin-bottom: 25px;">
             <input type="text" name="email" id="inputEmail" class="form-control border border-bottom"  required=""  autofocus oninvalid="this.setCustomValidity('Ini wajib di isi! / isi format dengan benar!')" oninput="this.setCustomValidity('')">
             <label for="inputEmail" class="sr-only form-label">Username</label>
           </div>
@@ -60,13 +63,13 @@
             <label for="inputPassword" class="sr-only form-label">Password</label>
           </div>
         </div>
-        <input class="btn btn-lg btn-primary btn-block" type="submit" name="login" value="Sign-in">
+        <input class="btn btn-lg btn-success btn-block mt-4" type="submit" name="login" value="Sign-in">
         
       </form>
 
-    </div> <!-- /container -->
-
-
+   
+</div>
+<!-- /container -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./lib/ie10-viewport-bug-workaround.js"></script>
   

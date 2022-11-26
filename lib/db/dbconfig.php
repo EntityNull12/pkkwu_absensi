@@ -7,8 +7,8 @@
      *  
      */
 
-    // $dbuser = "root";
-    // $dbpwd = "";
+    // $dbuser = "rpls4335_admin_absensi";
+    // $dbpwd = "admin_absensirpl";
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpwd = "";
