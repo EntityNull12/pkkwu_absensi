@@ -47,7 +47,7 @@ include '../lib/db/dbconfig.php';
 		}
 		$conn->close();
 	} else {
-		echo "<script>window.alert('Waaahh.. Bandel ya !! ');window.location=('../home');</script>";
+		echo "<script>window.location=('../home');</script>";
 	}
 
  ?>

@@ -52,8 +52,8 @@ if ($cek_page->num_rows != 0) {
                     <thead>
                         <tr>
                             <th style='width:2%'>No</th>
-                            <th style='width:40%'>Nama Siswa</th>
-                            <th style='width:40%'>Asal Sekolah</th>
+                            <th style='width:30%'>Nama Siswa</th>
+                            <th style='width:30%'>NIM</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -63,12 +63,12 @@ if ($cek_page->num_rows != 0) {
                     while ($get_siswa = $query_siswa->fetch_assoc()) {
                         $id_siswa = $get_siswa['id_user'];
                         $name = $get_siswa['name_user'];
-                        $school = $get_siswa['sklh_user'];
+                        $nis = $get_siswa['nis_user'];
                         $no++;
                         echo "<tr>
                                 <td>$no</td>
                                 <td>$name</td>
-                                <td><strong>$school</strong></td>
+                                <td>$nis</td>
                                 <td>
                                 <div class='d-flex flex-column'>
                                 <a class='btn btn-primary btn-sm mb-1' href='siswa&id_siswa=$id_siswa' title='Edit $name'>Edit info</a>  <a style='cursor:pointer' class='btn btn-danger btn-sm' onclick='hapusSiswa($id_siswa)' >Hapus Siswa</a>

@@ -34,16 +34,16 @@
   <div class="form-group my-2">
     <label class="control-label col-sm-2" for="jk">Jenis Kelamin:</label>
     <div class="col-sm-10">
-    	<label class="radio-inline my-2"><input type="radio" name="jk" id="jk" value="L" class="mx-2">Laki-laki</label>
+    	<label class="radio-inline my-2"><input type="radio" name="jk" id="jk" value="L" class="me-2">Laki-laki</label>
 		<label class="radio-inline"><input type="radio" name="jk" id="jk" value="P" class="mx-2">Perempuan</label>
     </div>
   </div>
-  <div class="form-group my-2">
+  <!-- <div class="form-group my-2">
     <label class="control-label col-sm-2" for="sekolah">Nama Sekolah:</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" name="sklh" placeholder="Masukan Nama Sekolah" required>
     </div>
-  </div>
+  </div> -->
   <div class="form-group my-2">
     <label class="control-label col-sm-2" for="email">Username:</label>
     <div class="col-sm-10">

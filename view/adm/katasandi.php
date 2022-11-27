@@ -31,19 +31,19 @@ if ($get_u = $query->fetch_assoc()) {
 <form class="form-horizontal" method="post" action="./model/proses.php">
 <input type="hidden" value="<?php echo $id; ?>" name="id">
   <div class="box-body">
-      <div class="form-group">
+      <div class="form-group mb-2">
           <label for="inputPassword3" class="col-sm-2 control-label">Pengguna</label>
           <div class="col-sm-10">
             <strong class="form-control"><?php echo "$name_user - $email_user"; ?></strong>
           </div>
         </div>
-    <div class="form-group">
+    <div class="form-group mb-2">
       <label for="inputPassword3" class="col-sm-2 control-label">Katasandi baru</label>
       <div class="col-sm-10">
         <input type="password" name="new-pwd" class="form-control" id="masuk" placeholder="*************" required>
       </div>
     </div>
-    <div class="form-group">
+    <div class="form-group mb-2">
       <label for="inputPassword3" class="col-sm-2 control-label">Ulangi katasandi</label>
       <div class="col-sm-10">
         <input type="password" name="new-pwd-cek" class="form-control" id="masuk_lagi" placeholder="*************" required>
@@ -51,7 +51,7 @@ if ($get_u = $query->fetch_assoc()) {
     </div>
   </div><!-- /.box-body -->
   <div class="box-footer">
-    <button type="submit" name="change-pwd" class="btn btn-info pull-right">Ubah</button>
+    <button type="submit" name="change-pwd" class="btn btn-primary btn-sm pull-right">Ubah</button>
   </div><!-- /.box-footer -->
 </form>
 <?php 
