@@ -32,7 +32,7 @@
 							<td>$no</td>
 							<td>$name</td>
 							<td>$school</td>
-							<td><a class='btn btn-primary' href='catatan&id_siswa=$id_siswa' title='Catatan $name'>Lihat Catatan</a></td>
+							<td><a class='btn btn-primary btn-sm' href='catatan&id_siswa=$id_siswa' title='Catatan $name'>Lihat Catatan</a></td>
 						</tr>";
 				}
 				$conn->close();

@@ -69,7 +69,11 @@ if ($cek_page->num_rows != 0) {
                                 <td>$no</td>
                                 <td>$name</td>
                                 <td><strong>$school</strong></td>
-                                <td><a class='btn btn-primary px-2 py-1' href='siswa&id_siswa=$id_siswa' title='Edit $name'>Edit info</a>  <a style='cursor:pointer' class='btn btn-danger ms-2 px-2' onclick='hapusSiswa($id_siswa)' >Hapus Siswa</a></td>
+                                <td>
+                                <div class='d-flex flex-column'>
+                                <a class='btn btn-primary btn-sm mb-1' href='siswa&id_siswa=$id_siswa' title='Edit $name'>Edit info</a>  <a style='cursor:pointer' class='btn btn-danger btn-sm' onclick='hapusSiswa($id_siswa)' >Hapus Siswa</a>
+                                </div>
+                                </td>
                             </tr>";
                     }
                    // $conn->close();

@@ -4,7 +4,7 @@
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
 </button>
-  <a class="navbar-brand text-white" href="home">ABSENSI</a>
+  <a class="navbar-brand text-white" style="padding-left: 10px;" href="home">ABSENSI</a>
   </div>
 <div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right d-lg-none">

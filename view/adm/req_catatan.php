@@ -19,10 +19,10 @@
                   <thead>
                      <tr>
                       <th>No</th>
+                      <th></th>
                       <th>Nama Siswa</th>
                       <th>Hari, Tanggal</th>
                       <th width='40%'>Kegiatan</th>
-                      <th>Aksi</th>
                      </tr>
                   </thead>
                   <tbody>";
@@ -37,13 +37,15 @@
             $no++; 
               echo  "<tr>
                   <td>$no</td>
+                  <td>
+                  <div class='d-flex flex-column'>
+                  <button type='button' class='btn btn-primary btn-sm mb-1' onclick=\"window.location.href='./model/proses.php?acc_note=$id_note';\">Konfirmasi</button>
+                  <button type='button' class='btn btn-danger btn-sm' onclick=\"window.location.href='./model/proses.php?dec_note=$id_note';\">Tolak</button>
+                  </div>
+                  </td>
                   <td>$name</td>  
                   <td>$date</td>
                   <td>$note</td>
-                  <td>
-                  <button type='button' class='btn btn-success' onclick=\"window.location.href='./model/proses.php?acc_note=$id_note';\">Konfirmasi</button>&nbsp;
-                  <button type='button' class='btn btn-danger' onclick=\"window.location.href='./model/proses.php?dec_note=$id_note';\">Tolak</button>
-                  </td>
                   </tr>";
           }
           echo "</tbody></table></div>";

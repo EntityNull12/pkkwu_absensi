@@ -1,15 +1,15 @@
-<label><h3>Tambah Catatan</h3></label>
+<label><h3 style="padding-left: 5px;">Tambah Catatan</h3></label>
 <form method="post" action="./model/proses.php" name="form1" id="form1" onSubmit="return valregister()">
 	<div class="table-responsive">
 	  <table class="table">
 	   <tr>
-	   	<td style="border-top:none;">
+	   	<td class="border-0">
   			<textarea class="form-control" rows="10" name="note" id="note"></textarea>
 	   	</td>
 	   </tr>
 	   <tr>
-	   		<td style="border-top:none;">
-	   			<button type="submit" name="simpan_note" id="save" onclick="saveForm(); return false;" class="btn btn-success">Simpan</button>
+	   		<td class="border-0">
+	   			<button type="submit" name="simpan_note" id="save" onclick="saveForm(); return false;" class="btn btn-success btn-sm">Simpan</button>
 	   		</td>
 	   </tr>
 	  </table>

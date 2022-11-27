@@ -55,7 +55,7 @@
 	            echo "<div class='alert alert-warning'><strong>Tidak ada Cataan untuk ditampilkan.</strong></div>";
 	        }
     }elseif (isset($_SESSION['sw'])) {
-        echo "<h3 class='sub-header'>Catatanku <button type='button' onclick=\"window.location.href='tambah_catatan';\" class='btn btn-success'>Tambah</button> </h3>";
+        echo "<h3 class='sub-header position-relative'>Catatanku <button type='button' onclick=\"window.location.href='tambah_catatan';\" class='btn btn-success btn-sm position-absolute end-0'>Tambah</button> </h3>";
         $query = $conn->query("SELECT*FROM detail_user WHERE id_user='$_SESSION[id]'");
 	    $get_user=$query->fetch_assoc();
 	    $name = $get_user['name_user'];

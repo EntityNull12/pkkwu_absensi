@@ -63,7 +63,7 @@
             <label for="inputPassword" class="sr-only form-label">Password</label>
           </div>
         </div>
-        <input class="btn btn-lg btn-success btn-block mt-4" type="submit" name="login" value="Sign-in">
+        <input class="btn btn-success btn-block mt-4" type="submit" name="login" value="Sign-in">
         
       </form>
 
