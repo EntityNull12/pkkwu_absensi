@@ -25,9 +25,10 @@ else {
             font-family:"Arial";
         }
     </style>
-    <title>Edit user</title>
+    <title style="font-family: Poppins-semibold;">Edit user</title>
 </head>
 <body>
+<link rel="stylesheet" href="../lib/font/semibold.css">
 <div style="background-color: #eee; padding: 20px;">
     <h1>Kode panda</h1>
     <p>Introduce PHP MySQLi</p>

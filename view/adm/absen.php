@@ -1,4 +1,5 @@
-<h3 class="page-header">Konfirmasi Absensi</h3>
+<link rel="stylesheet" href="../../lib/font/semibold.css">
+<h3 class="page-header" style="font-family: Poppins-semibold;">Konfirmasi Absensi</h3>
 <?php
   $sql = "SELECT*FROM data_absen NATURAL LEFT JOIN bulan NATURAL JOIN hari NATURAL JOIN tanggal NATURAL JOIN detail_user WHERE st_jam_msk='Menunggu' OR st_jam_klr='Menunggu'";
   $query = $conn->query($sql);

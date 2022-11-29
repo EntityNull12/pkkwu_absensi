@@ -1,4 +1,5 @@
-<h3 class='page-header'>Ganti katasandi</h3>
+<link rel="stylesheet" href="../../lib/font/semibold.css">
+<h3 class='page-header'  style="font-family: Poppins-semibold;">Ganti katasandi</h3>
 <div class="col">
 <?php 
 if (isset($_GET['st'])) {

@@ -7,6 +7,11 @@
   src: url(./font/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: Poppins-semibold;
+  src: url(./font/Poppins-SemiBold.ttf);
+}
+
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   /* padding-top: 50px; */

@@ -35,6 +35,7 @@
   <div class="container">
 
   <h2 class="text-center text-white mb-4" style="font-family: Poppins-semibold;">Selamat Datang</h2>
+  <img src="../lib/img/logo.png" alt="" srcset="">
 
     
       <form class="form-signin bg-white rounded-4" method="post" action="model/proses.php" autocomplete="off">

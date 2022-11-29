@@ -1,4 +1,5 @@
-<h3 class="page-header">Konfirmasi Catatan Kegiatan Siswa</h3>
+<link rel="stylesheet" href="../../lib/font/semibold.css">
+<h3 class="page-header" style="font-family: Poppins-semibold;">Konfirmasi Catatan Kegiatan Siswa</h3>
 <?php
   $sql = "SELECT*FROM catatan NATURAL LEFT JOIN bulan NATURAL JOIN hari NATURAL JOIN tanggal NATURAL JOIN detail_user WHERE status_cat='Menunggu'";
   $query = $conn->query($sql);

@@ -1,4 +1,5 @@
-<h3 class='page-header'>Daftar Siswa PKL</h3>
+<link rel="stylesheet" href="../../lib/font/semibold.css">
+<h3 class='page-header' style="font-family: Poppins-semibold;">Daftar Siswa</h3>
 <?php 
 if (isset($_GET['st'])) {
         if ($_GET['st']==1) {

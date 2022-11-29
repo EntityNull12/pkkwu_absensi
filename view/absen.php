@@ -1,4 +1,5 @@
-<h1 class="page-header">Absen</h1>
+<link rel="stylesheet" href="../lib/font/semibold.css">
+<h1 class="page-header" style="font-family: Poppins-semibold;">Absen</h1>
 <?php
 
 $this_day = date("d");

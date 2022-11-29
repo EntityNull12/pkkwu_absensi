@@ -10,8 +10,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="../view/favicon.ico">
-
-  <title>Absensi Prakerin</title>
+  <link rel="stylesheet" href="../lib/font/semibold.css">
+  <title style="font-family: Poppins-semibold;">Absensi Prakerin</title>
 
   <link href="./lib/bootstrap.min.css" rel="stylesheet">
   <link href="./lib/ie10-viewport-bug-workaround.css" rel="stylesheet">

@@ -1,4 +1,5 @@
-<h3 class='page-header'>Detail Absensi Siswa PKL</h3>
+<link rel="stylesheet" href="../../lib/font/semibold.css">
+<h3 class='page-header'  style="font-family: Poppins-semibold;">Detail Absensi Siswa</h3>
 	<div class='table-responsive'>
 	<?php 
 		if (isset($_GET['id_siswa'])) {
