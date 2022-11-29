@@ -6,7 +6,7 @@
 		$name = $get_user['name_user'];
 		$id_user = $get_user['id_user'];
 
-		echo "<h1 class='page-header'>Welcome, $name</h1>";
+		echo "<h1 class='page-header' style='font-family:Poppins-semibold'>Welcome, $name</h1>";
 		
 			if ($conn->query("SELECT*FROM data_absen WHERE id_user='$id_user'")->num_rows!==0) {
 				$no=0;
